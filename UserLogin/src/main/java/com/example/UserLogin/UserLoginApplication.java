@@ -8,6 +8,7 @@ public class UserLoginApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserLoginApplication.class, args);
+		System.out.println("Hello world");
 	}
 
 }
