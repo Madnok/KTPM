@@ -1,0 +1,7 @@
+Một dự án đơn giản hơn có thể là một hệ thống đăng nhập và quản lý người dùng, kết hợp với việc lưu trữ thông tin cơ bản bằng Redis. Cụ thể:
+
+Service đầu tiên sử dụng JWT để xác thực và quản lý người dùng.
+Service thứ hai sử dụng Redis để lưu trữ thông tin cơ bản về người dùng, ví dụ như thông tin cá nhân, cài đặt cá nhân, hoặc lịch sử hoạt động.
+Mỗi service có thể được triển khai thành một module trong dự án Spring Boot. Cả hai service có thể sử dụng Spring Data Redis để tương tác với Redis và Spring Security để xác thực và quản lý quyền truy cập.
+
+Nếu cần thêm thông tin chi tiết hoặc mã mẫu, hãy cho biết thêm!
