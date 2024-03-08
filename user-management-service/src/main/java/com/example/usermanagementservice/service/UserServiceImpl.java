@@ -1,6 +1,7 @@
 package com.example.usermanagementservice.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,33 +17,39 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getAllUsers() {
-        // TODO: Implement logic to get all users from the database
         return userRepository.findAll();
     }
 
     @Override
     public User getUserById(Long userId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getUserById'");
+        Optional<User> optionalUser = userRepository.findById(userId);
+        return optionalUser.orElse(null);
     }
 
     @Override
     public User createUser(User user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'createUser'");
+
+        return userRepository.save(user);
     }
 
     @Override
     public User updateUser(Long userId, User user) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateUser'");
+        Optional<User> optionalUser = userRepository.findById(userId);
+        if (optionalUser.isPresent()) {
+            User existingUser = optionalUser.get();
+            existingUser.setUsername(user.getUsername());
+            existingUser.setPassword(user.getPassword());
+            existingUser.setEmail(user.getEmail());
+
+            
+            return userRepository.save(existingUser);
+        } else {
+            return null; 
+        }
     }
 
     @Override
     public void deleteUser(Long userId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteUser'");
+        userRepository.deleteById(userId);
     }
-
-    // TODO: Implement other methods as per UserService interface
 }
