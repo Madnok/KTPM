@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/API_Gateway/API_Gateway.iml" filepath="$PROJECT_DIR$/API_Gateway/API_Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery.iml" filepath="$PROJECT_DIR$/ServiceDiscovery/ServiceDiscovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Week2.iml" filepath="$PROJECT_DIR$/.idea/Week2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service1_1_User/service1_1_User.iml" filepath="$PROJECT_DIR$/service1_1_User/service1_1_User.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service1_Product/service1_product.iml" filepath="$PROJECT_DIR$/service1_Product/service1_product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service2_Order/service2_Order.iml" filepath="$PROJECT_DIR$/service2_Order/service2_Order.iml" />
+    </modules>
+  </component>
+</project>
