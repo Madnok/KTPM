@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Week3
+
+  datasource:
+    url: jdbc:h2:file:D:/FolderForPython/KTPM/Week3/data/testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2console
