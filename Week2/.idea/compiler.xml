@@ -16,11 +16,11 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AGApp" target="16" />
-      <module name="API_Gateway" target="17" />
+      <module name="API_Gateway" target="16" />
       <module name="service1_1_User" target="16" />
-      <module name="service1_product" target="17" />
-      <module name="service2_Order" target="17" />
-      <module name="ServiceDiscovery" target="17" />
+      <module name="service1_product" target="16" />
+      <module name="service2_Order" target="16" />
+      <module name="ServiceDiscovery" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
